@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>lazyload</title>
+
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		p{
+			margin: 350px auto;
+		}
+		img{
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+
+	<div>
+		<p>
+			<img class="lazy" data-original="img/Luhu.jpg" alt="">
+		</p>
+		<p>
+			<img class="lazy" data-original="img/Luhu2.jpeg" alt="">
+		</p>
+		<p>
+			<img class="lazy" data-original="img/Luhu3.jpeg" alt="">
+		</p>
+		<p>
+			<img class="lazy" data-original="img/Luhu4.jpeg" alt="">
+		</p>
+	</div>
+	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+	<script src="lazyload.min.js"></script>
+	<script>
+		$("img.lazy").lazyload();
+	</script>
+	
+</body>
+</html>
